@@ -36,5 +36,6 @@
 	bsc 		: BSC Mainnet
 	bsc_test	: BSC Testnet
 	snow		: SNOW Mainnet
+	arctic		: ARCTIC Testnet
 	```
 	Other networks have not been configured.

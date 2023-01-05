@@ -4,6 +4,7 @@ require("@nomiclabs/hardhat-waffle");
 const SNOW = require("./config/SNOW.json")
 const BSC = require("./config/BSC.json")
 const BSC_TESTNET = require("./config/BSC_TESTNET.json")
+const ARCTIC = require("./config/ARCTIC.json")
 
 task("contract", "Interact with contract")
   .addParam("cname", "Contract name")
@@ -80,6 +81,14 @@ module.exports = {
       accounts: [
         "a9584f8a67e026623eb5be24a9085f3054aa73c1acc145b920bddaab54be0c14"
       ],
+    },
+    arctic: {
+      url: ARCTIC.network.uri,
+      accounts: [
+        "a9584f8a67e026623eb5be24a9085f3054aa73c1acc145b920bddaab54be0c14"
+      ],
+      // gas: 9000000,
+      gasPrice: 20000000000,
     },
   },
 };
